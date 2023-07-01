@@ -736,11 +736,12 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="text-center">
-              <form>
+              <form method="post" action="register.php">
                 <div class="form-row">
                   <div class="form-group col-sm-6">
                     <input
                       type="text"
+                      name="fullname"
                       class="form-control bg-secondary border-0 py-4 px-3"
                       placeholder="Your Name"
                     />
@@ -748,6 +749,7 @@
                   <div class="form-group col-sm-6">
                     <input
                       type="email"
+                      name="email"
                       class="form-control bg-secondary border-0 py-4 px-3"
                       placeholder="Your Email"
                     />
@@ -755,19 +757,16 @@
                 </div>
                 <div class="form-row">
                   <div class="form-group col-sm-6">
-                    <select
-                      class="form-control bg-secondary border-0"
-                      style="height: 52px"
-                    >
-                      <option>Number of Guest</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                    </select>
+                    <input
+                    type="phone"
+                    name="phone"
+                    class="form-control bg-secondary border-0 py-4 px-3"
+                    placeholder="Your phone"
+                  />
+                   
                   </div>
                   <div class="form-group col-sm-6">
-                    <select
+                    <select name="event"
                       class="form-control bg-secondary border-0"
                       style="height: 52px"
                     >
@@ -777,8 +776,32 @@
                     </select>
                   </div>
                 </div>
+                <div class="form-row">
+                  <div class="form-group col-sm-6">
+                    <select name="guest"
+                    class="form-control bg-secondary border-0"
+                    style="height: 52px"
+                  >
+                    <option>Number of Guest</option>
+                    
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <select name="event"
+                      class="form-control bg-secondary border-0"
+                      style="height: 52px"
+                    >
+                      <option>Asoebi</option>
+                      <option>Interested</option>
+                      <option>Not Interested</option>
+                    </select>
+                  </div>
+                </div>
                 <div class="form-group">
                   <textarea
+                  name="message"
                     class="form-control bg-secondary border-0 py-2 px-3"
                     rows="5"
                     placeholder="Message"
@@ -786,12 +809,13 @@
                   ></textarea>
                 </div>
                 <div>
-                  <button
+                  <input 
+                  name="submit"
                     class="btn btn-primary font-weight-bold py-3 px-5"
                     type="submit"
                   >
-                    Submit
-                  </button>
+                    
+                  </input>
                 </div>
               </form>
             </div>
