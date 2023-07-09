@@ -120,7 +120,7 @@ function sendMail() {
     name: document.getElementById("fullname").value,
     phone: document.getElementById("phone").value,
     email: document.getElementById("email").value,
-    event: document.getElementById("event").value,
+    eventt: document.getElementById("eventt").value,
     guest: document.getElementById("guest").value,
     asoebi: document.getElementById("asoebi").value,
     message: document.getElementById("message").value,
@@ -133,7 +133,7 @@ function sendMail() {
     document.getElementById("fullname").value = "";
     document.getElementById("phone").value = "";
     document.getElementById("email").value = "";
-    document.getElementById("event").value = "";
+    document.getElementById("eventt").value = "";
     document.getElementById("guest").value = "";
     document.getElementById("asoebi").value = "";
     document.getElementById("message").value = "";
