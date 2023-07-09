@@ -138,7 +138,7 @@ function sendMail() {
     document.getElementById("asoebi").value = "";
     document.getElementById("message").value = "";
     console.log(res);
-    alert("successful");
+    alert("Invite sent to your Email");
   });
   // .catch((err)=>console.log(err));
 }
