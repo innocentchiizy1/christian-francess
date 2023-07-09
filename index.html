@@ -742,6 +742,7 @@
                     <input
                       type="text"
                       name="fullname"
+                      id="fullname"
                       class="form-control bg-secondary border-0 py-4 px-3"
                       placeholder="Your Name"
                     />
@@ -749,6 +750,7 @@
                   <div class="form-group col-sm-6">
                     <input
                       type="email"
+                      id="email"
                       name="email"
                       class="form-control bg-secondary border-0 py-4 px-3"
                       placeholder="Your Email"
@@ -759,6 +761,7 @@
                   <div class="form-group col-sm-6">
                     <input
                     type="phone"
+                    id="phone"
                     name="phone"
                     class="form-control bg-secondary border-0 py-4 px-3"
                     placeholder="Your phone"
@@ -767,6 +770,7 @@
                   </div>
                   <div class="form-group col-sm-6">
                     <select name="event"
+                    id="event"
                       class="form-control bg-secondary border-0"
                       style="height: 52px"
                     >
@@ -779,6 +783,7 @@
                 <div class="form-row">
                   <div class="form-group col-sm-6">
                     <select name="guest"
+                    id="guest"
                     class="form-control bg-secondary border-0"
                     style="height: 52px"
                   >
@@ -790,6 +795,7 @@
                   </div>
                   <div class="form-group col-sm-6">
                     <select name="asoebi"
+                    id="asoebi"
                       class="form-control bg-secondary border-0"
                       style="height: 52px"
                     >
@@ -801,6 +807,7 @@
                 </div>
                 <div class="form-group">
                   <textarea
+                  id="message"
                   name="message"
                     class="form-control bg-secondary border-0 py-2 px-3"
                     rows="5"
@@ -813,6 +820,7 @@
                   name="submit"
                     class="btn btn-primary font-weight-bold py-3 px-5"
                     type="submit"
+                    onclick="sendMail()"
                   >
                     
                   </input>
@@ -891,5 +899,13 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("weADPkVNtKqyegblP");
+   })();
+</script>
   </body>
 </html>
